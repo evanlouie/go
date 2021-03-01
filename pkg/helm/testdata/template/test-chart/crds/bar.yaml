@@ -1,0 +1,12 @@
+apiVersion: apiextensions.k8s.io/v1beta1
+kind: CustomResourceDefinition
+metadata:
+  name: bar.fabrikate.microsoft.com
+spec:
+  group: fabrikate.microsoft.com
+  version: v1alpha1
+  names:
+    kind: Bar
+    plural: bars
+    singular: bar
+  scope: Namespaced
